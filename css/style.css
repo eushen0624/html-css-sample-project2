@@ -1,0 +1,113 @@
+/*Primary Font: font-family: 'Lobster', cursive;
+Secondary Font: font-family: 'EB Garamond', serif;
+
+Colors:
+background-color: #0BC9CD;
+font color: black
+paragraph: lightgray;
+*/
+body{
+	font-family: 'EB Garamond', serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.main{
+	background-color: #0BC9CD;
+	width: 100wh;
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-gap: 25px;
+	padding: 25px;
+	
+}
+
+.content{
+	background-color: #1d8a99;
+	padding: 0 30px;
+}
+
+.sidebar{
+	background-color: #7c77b9;
+	padding: 0 30px;
+	margin-right: 20px;
+}
+
+h1, h2, h3{
+	font-family: 'Lobster', cursive;
+}
+
+h1 {
+	text-align: center;
+	color: Whitesmoke;
+	font-size: 50px;
+
+}
+
+#image-1 {
+	margin: 15px;
+	height: 300px;
+	float: right;
+}
+
+.img-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.img-grid > img {
+	margin: 10px;
+}
+
+img {
+	width: 400px;
+	height: 200px;
+	transition: 0.5s all;
+}
+
+img:hover {
+	height: 250px;
+	width: 500px;
+}
+
+.post {
+	border: solid 1px #0BC9CD;
+	padding: 15px;
+	margin: 20px 5px;
+}
+
+a {
+	text-decoration: none;
+	color: brown;
+	font-weight: bold;
+	transition: 1s all;
+}
+
+
+a:hover {
+	color: #0BC9CD;
+}
+
+#welcome {
+	animation-name: colorChange;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: 3;
+	animation-direction: infinite;
+	
+}
+
+
+
+@keyframes colorChange {
+	from {
+		transform: translate(0px, 20px);
+	}
+
+	to {
+		transform: translate(0px, 0px);
+	}
+}
